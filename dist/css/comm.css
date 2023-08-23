@@ -1,23 +1,28 @@
 @charset "UTF-8";
 @font-face {
-  font-family: "Poppins";
-  src: url(../fonts/Poppins-Light) format("woff");
-  font-weight: 300;
+  font-family: "Pretendard";
+  src: url(../fonts/Pretendard-Regular.woff) format("woff");
+  font-weight: 400;
 }
 @font-face {
-  font-family: "Poppins";
-  src: url(../fonts/Poppins-Medium.woff) format("woff");
+  font-family: "Pretendard";
+  src: url(../fonts/Pretendard-Medium.woff) format("woff");
   font-weight: 500;
 }
 @font-face {
-  font-family: "Poppins";
-  src: url(../fonts/Poppins-SemiBold.woff) format("woff");
+  font-family: "Pretendard";
+  src: url(../fonts/Pretendard-SemiBold.woff) format("woff");
   font-weight: 600;
 }
 @font-face {
-  font-family: "Poppins";
-  src: url(../fonts/Poppins-Regular.woff) format("woff");
-  font-weight: 400;
+  font-family: "Pretendard";
+  src: url(../fonts/Pretendard-Bold.woff) format("woff");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Pretendard";
+  src: url(../fonts/Pretendard-Black.woff) format("woff");
+  font-weight: 900;
 }
 @font-face {
   font-family: "Material Icons";
@@ -351,78 +356,56 @@ legend {
   font-size: 1.1429rem;
 }
 
-.lst-thumb {
+.swiper-slide {
+  width: 100%;
+}
+.swiper-slide ul {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
 }
-.lst-thumb li {
-  width: calc(50% - 10px);
-  margin-bottom: 20px;
-}
-.lst-thumb li .thumb-shopping {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  border-radius: 4px;
-}
-.lst-thumb li .thumb-shopping::before {
-  content: "";
-  display: block;
-  height: 0;
-  padding-top: 100%;
-}
-.lst-thumb li .thumb-shopping::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  border-radius: inherit;
-  background: rgba(0, 0, 0, 0.03);
-  border: 1px solid rgba(0, 0, 0, 0.06);
-}
-.lst-thumb li img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: 50% 50%;
-     object-position: 50% 50%;
-  transition: transform 0.3s;
-}
-.lst-thumb a:hover img {
-  transform: scale(1.05);
-}
-.lst-thumb .txt-shopping {
-  margin-top: 10px;
-}
-.lst-thumb .txt-shopping .txt-shopping__tit {
-  display: block;
-  margin-bottom: 5px;
-  font-size: 14px;
-  color: #101010;
-}
-.lst-thumb .txt-shopping .txt-shopping__desc {
-  font-size: 12px;
+.swiper-slide ul li {
+  width: 1440px;
+  height: 850px;
 }
 
+.section-show .sec-tit {
+  text-align: center;
+  font-family: "Pretendard", serif;
+  font-weight: 600;
+  font-size: 40px;
+}
+
+.lst-show {
+  display: flex;
+}
+.lst-show .show-item {
+  margin: 30px 60px 30px 0;
+}
+.lst-show .show-item .show-txt .show-bg-black {
+  margin: 30px 5px 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 30px;
+  color: #fff;
+  background: #111;
+  border: 1px solid #111;
+}
+.lst-show .show-item .show-txt .show-bg-white {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 30px;
+  background: #fff;
+  border: 1px solid #111;
+}
 .contents {
   height: 300px;
 }
 
-.wrap {
-  padding-top: 70px;
-}
-
 .container {
-  padding: 0 4%;
+  padding: 0 50px;
 }
 
 .bg-gray {
@@ -452,29 +435,87 @@ legend {
 }
 
 #header {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 1000;
   border-bottom: 1px solid #000;
-  background: rgba(255, 255, 255, 0);
 }
 #header .inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  height: 125px;
 }
 #header .head__right {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-#header .lst-util {
+#header .head__right .util {
+  position: absolute;
+  top: 40px;
+  right: 210px;
+}
+#header .util-depth1 {
   display: flex;
 }
-#header .lst-util li {
+#header .util-depth1 .util-gnb-txt {
+  position: relative;
   display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 130px;
+}
+#header .util-depth1 .util-gnb-txt > a {
+  padding: 10px;
+  font-family: "Pretendard", serif;
+  font-weight: 500;
+  font-size: 20px;
+}
+#header .util-depth2 {
+  position: absolute;
+  top: 90px;
+  left: 0;
+  width: 130px;
+}
+#header .util-depth2 li > a {
+  display: block;
+  padding: 5px;
+}
+#header .language > ul {
+  display: flex;
+}
+#header .lang-kr {
+  content: "";
+  position: absolute;
+  top: 46px;
+  right: 95px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 32px;
+  background: #111;
+}
+#header .lang-kr a {
+  color: #fff;
+}
+#header .lang-en {
+  content: "";
+  position: absolute;
+  top: 46px;
+  right: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 32px;
+  border: 1px solid #111;
+}
+#header .lang-en a {
+  color: #111;
 }
 #header .btn-g {
   display: flex;
@@ -522,6 +563,7 @@ legend {
 }
 .gnb-wrap .label-burger {
   position: relative;
+  right: 120px;
   z-index: 1150;
   display: flex;
   width: 40px;
@@ -562,10 +604,9 @@ legend {
 
 .swiper-slide {
   text-align: center;
-  height: 100vh;
   font-size: 18px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 
@@ -584,7 +625,7 @@ legend {
   padding-bottom: 50px;
 }
 .section-g .sec-tit {
-  font-size: 1.4286rem;
+  font-size: 40px;
   color: #000;
 }
 .section-g .sec-contents {

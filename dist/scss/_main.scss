@@ -1,5 +1,5 @@
 .slide-intro {
-    margin-top: -70px;
+  margin-top: -70px;
 
   .swiper-slide__txt {
     position: absolute;
@@ -53,67 +53,126 @@
 
 //   텍스트 게시판
 //   이미지 게시판
-.lst-thumb {
+// .lst-thumb {
+//   display: flex;
+//   flex-wrap: wrap;
+//   justify-content: space-between;
+//   li {
+//     width: calc(50% - $spacingList / 2);
+//     margin-bottom: $spacingList;
+//     .thumb-shopping {
+//       position: relative;
+//       overflow: hidden;
+//       width: 100%;
+//       // height: 200px;
+//       border-radius: 4px;
+//       &::before {
+//         content: "";
+//         display: block;
+//         height: 0;
+//         padding-top: 100%;
+//       }
+//       &::after {
+//         content: "";
+//         position: absolute;
+//         top: 0;
+//         left: 0;
+//         right: 0;
+//         bottom: 0;
+//         border-radius: inherit;
+//         background: rgba($b, 0.03);
+//         border: 1px solid rgba($b, 0.06);
+//       }
+//     }
+//     img {
+//       position: absolute;
+//       top: 0;
+//       left: 0;
+//       right: 0;
+//       bottom: 0;
+//       width: 100%;
+//       height: 100%;
+//       object-fit: cover;
+//       object-position: 50% 50%;
+//       transition: transform 0.3s;
+//     }
+//   }
+//   a {
+//     &:hover {
+//       img {
+//         transform: scale(1.05);
+//       }
+//     }
+//   }
+//   .txt-shopping {
+//     margin-top: 10px;
+//     .txt-shopping__tit {
+//       display: block;
+//       margin-bottom: 5px;
+//       font-size: 14px;
+//       color: $titDefault;
+//     }
+//     .txt-shopping__desc {
+//       font-size: 12px;
+//     }
+//   }
+// }
+
+.swiper-slide {
+  width: 100%;
+  ul {
+    display: flex;
+    li {
+      width: 1440px;
+      height: 850px;
+    }
+  }
+}
+
+.section-show {
+  .sec-tit {
+    text-align: center;
+    font-family: "Pretendard", serif;
+    font-weight: 600;
+    font-size: 40px;
+  }
+}
+.lst-show {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  li {
-    width: calc(50% - $spacingList / 2);
-    margin-bottom: $spacingList;
-    .thumb-shopping {
-      position: relative;
-      overflow: hidden;
-      width: 100%;
-      // height: 200px;
-      border-radius: 4px;
-      &::before {
-        content: "";
-        display: block;
-        height: 0;
-        padding-top: 100%;
+  .show-item {
+    margin: 30px 60px 30px 0;
+    .show-txt {
+      // position: relative;
+      .show-bg-black {
+        // content: "";
+        // position: absolute;
+        // top: 30px;
+        // left: 0;
+        margin: 30px 5px 20px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80px;
+        height: 30px;
+        color: #fff;
+        background: #111;
+        border: 1px solid #111;
       }
-      &::after {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        border-radius: inherit;
-        background: rgba($b, 0.03);
-        border: 1px solid rgba($b, 0.06);
+      .show-bg-white {
+        // content: "";
+        // position: absolute;
+        // top: 30px;
+        // left: 88px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80px;
+        height: 30px;
+        background: #fff;
+        border: 1px solid #111;
       }
-    }
-    img {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: 50% 50%;
-      transition: transform 0.3s;
-    }
-  }
-  a {
-    &:hover {
-      img {
-        transform: scale(1.05);
+      a {
       }
-    }
-  }
-  .txt-shopping {
-    margin-top: 10px;
-    .txt-shopping__tit {
-      display: block;
-      margin-bottom: 5px;
-      font-size: 14px;
-      color: $titDefault;
-    }
-    .txt-shopping__desc {
-      font-size: 12px;
     }
   }
 }

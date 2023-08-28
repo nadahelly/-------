@@ -6,6 +6,7 @@
 
 // 공통
 .wrap {
+  background: #fdfbf7;
   // padding-top: 70px;
 }
 .container {
@@ -63,7 +64,7 @@
     .util {
       position: absolute;
       top: 40px;
-      right: 210px;
+      right: 250px;
     }
   }
   .util-depth1 {
@@ -84,6 +85,7 @@
   }
 
   .util-depth2 {
+    display: none;
     position: absolute;
     top: 90px;
     left: 0;
@@ -228,10 +230,10 @@
 }
 
 // slide
-.swiper {
-  width: 100%;
-  height: 100%;
-}
+// .swiper {
+//   width: 100%;
+//   height: 100%;
+// }
 
 .swiper-slide {
   // position: relative;
@@ -257,8 +259,7 @@
 
 .swiper-slide img {
   display: block;
-  width: 100%;
-  height: 100%;
+
   object-fit: cover;
   object-position: 50% 50%;
 }
@@ -274,7 +275,7 @@
   padding-bottom: 50px;
   .sec-tit {
     font-size: 40px;
-    color: $b;
+    // color: $b;
   }
   .sec-contents {
     margin-top: 20px;

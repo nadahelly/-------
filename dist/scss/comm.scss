@@ -359,6 +359,221 @@
 // footer
 #footer {
   .inner {
-    border-top: 10px solid $gray-e;
+    border-top: 1px solid #111;
+  }
+  // footer 관련단체
+  .footer-bnr {
+    display: flex;
+    width: 1440px;
+    height: 100px;
+    border-bottom: 1px solid #111;
+    .footer-bnr-wrap {
+      display: flex;
+      margin: 0 50px;
+    }
+    .footer-bnr-tit {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 250px;
+      height: 100px;
+      border-right: 1px solid #111;
+      strong {
+        font-family: "Pretendard", serif;
+        font-weight: 500;
+        font-size: 20px;
+      }
+      // slide-control
+      .footer-slidecontrol {
+        margin-right: 30px;
+        ul {
+          display: flex;
+          span {
+            display: none;
+          }
+        }
+        .btn-prev {
+          font-family: "Line Awesome Free";
+          font-weight: 900;
+          &::before {
+            content: "\f104";
+            font-size: 23px;
+          }
+        }
+        .btn-play {
+          font-family: "Line Awesome Free";
+          font-weight: 900;
+          &::before {
+            content: "\f04b";
+            font-size: 23px;
+          }
+        }
+        .btn-stop {
+          font-family: "Line Awesome Free";
+          font-weight: 900;
+          &::before {
+            content: "\f04c";
+            font-size: 23px;
+          }
+        }
+        .btn-next {
+          font-family: "Line Awesome Free";
+          font-weight: 900;
+          &::before {
+            content: "\f105";
+            font-size: 23px;
+          }
+        }
+      }
+    }
+  }
+  // 관련단체 슬라이드
+  .footer-bnr-slide {
+    display: flex;
+    overflow: hidden;
+    .footer-bnr-lst {
+      display: flex;
+      align-items: center;
+      width: 1050px;
+      height: 100px;
+      margin-left: 20px;
+      .footer-bnr-goto {
+        margin: 0 40px;
+      }
+    }
+  }
+  // footer layout
+  .footer-layout {
+    padding: 0 50px;
+    background: #111;
+    .footer-txt {
+      display: flex;
+      justify-content: space-between;
+      padding: 70px 0;
+    }
+    // left
+    .footer-left {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      .footer-info {
+        display: flex;
+        margin-top: 30px;
+        address {
+          position: relative;
+          font-family: "Pretendard", serif;
+          font-weight: 500;
+          font-size: 15px;
+          color: #fff;
+          margin-right: 30px;
+        }
+        a {
+          position: relative;
+          font-family: "Pretendard", serif;
+          font-weight: 500;
+          font-size: 15px;
+          color: #fff;
+          margin-right: 30px;
+          &::before {
+            content: "";
+            position: absolute;
+            top: 2px;
+            left: -16px;
+            width: 2px;
+            height: 20px;
+            background: #fff;
+          }
+        }
+      }
+      .copyright {
+        font-family: "Pretendard", serif;
+        font-weight: 500;
+        font-size: 15px;
+        color: #fff;
+        margin-top: 12px;
+      }
+    }
+    // right
+    .footer-right {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      .sns-icon {
+        padding: 10px 0;
+        ul {
+          display: flex;
+          align-items: center;
+          li {
+            margin-left: 30px;
+          }
+          .sns-youTube {
+            padding-top: 2px;
+          }
+        }
+      }
+      .rink-box {
+        padding: 10px 0;
+        ul {
+          display: flex;
+          li {
+            position: relative;
+            &:nth-child(2) {
+              &::before {
+                content: "";
+                position: absolute;
+                top: 2px;
+                left: 15px;
+                width: 2px;
+                height: 20px;
+                background: #fff;
+              }
+            }
+          }
+          a {
+            font-family: "Pretendard", serif;
+            font-weight: 500;
+            font-size: 15px;
+            color: #fff;
+            padding-left: 30px;
+          }
+        }
+      }
+      .family-site {
+        padding-top: 10px;
+        .family-site-btn {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 250px;
+          height: 41px;
+          color: #fff;
+          border: 1px solid #fff;
+          font-family: "Line Awesome Free";
+          font-weight: 900;
+          font-size: 15px;
+          &::after {
+            content: "\f107";
+            padding-left: 20px;
+          }
+          span {
+            font-family: "Pretendard", serif;
+            font-weight: 500;
+            font-size: 15px;
+          }
+        }
+        .family-lst {
+          display: none;
+          a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 250px;
+            height: 41px;
+            color: #fff;
+            border: 1px solid #fff;
+          }
+        }
+      }
+    }
   }
 }

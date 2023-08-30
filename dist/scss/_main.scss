@@ -1,513 +1,477 @@
-.slide-intro {
-  // .swiper-slide__txt {
-  //   position: absolute;
-  //   z-index: 1;
-  //   // top: auto;
-  //   // left: auto;
-  //   top: 50%;
-  //   left: 50%;
-  //   width: 50%;
-  //   transform: translate(-50%, -50%);
-  //   color: $w;
-  //   strong {
-  //     font-size: 35px;
-  //   }
-  //   p {
-  //     font-size: 16px;
-  //     opacity: 0.8;
-  //   }
-  //   a {
-  //     display: inline-block;
-  //     top: 30px;
-  //     padding: 0 20px;
-  //     color: $b;
-  //     background: $w;
-  //     font-size: 0.8571rem;
-  //     border: 1px solid rgba($w, 0.3);
-  //     border-radius: 30px;
-  //     line-height: 30px;
-  //     margin-top: 20px;
-  //   }
-  // }
-}
-
+// 슬라이드
 .section-slide {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 125px 0 30px 0;
-  width: 1340px;
+  margin: 90px 0 30px 0;
+  // width: 1340px;
   height: 700px;
   .slide-txt {
-    width: 490px;
-    margin-top: 50px;
+    width: 700px;
+    margin-left: 100px;
   }
   .txt-top {
-    padding-bottom: 50px;
-    font-family: "Pretendard", serif;
-    font-weight: 600;
-    font-size: 38px;
-  }
-  .txt-bottom {
-    font-family: "Pretendard", serif;
-    font-weight: 600;
-    font-size: 25px;
-  }
-}
-
-.list-event {
-  li {
-    margin-bottom: 50px;
-  }
-  img {
-    display: block;
-    width: 100%;
-    height: 300px;
-    margin-bottom: 10px;
-    object-fit: cover;
-    object-position: 50% 80%;
-  }
-  p {
-    text-align: center;
-    font-size: 1.1429rem;
-  }
-}
-
-//   텍스트 게시판
-//   이미지 게시판
-// .lst-thumb {
-//   display: flex;
-//   flex-wrap: wrap;
-//   justify-content: space-between;
-//   li {
-//     width: calc(50% - $spacingList / 2);
-//     margin-bottom: $spacingList;
-//     .thumb-shopping {
-//       position: relative;
-//       overflow: hidden;
-//       width: 100%;
-//       // height: 200px;
-//       border-radius: 4px;
-//       &::before {
-//         content: "";
-//         display: block;
-//         height: 0;
-//         padding-top: 100%;
-//       }
-//       &::after {
-//         content: "";
-//         position: absolute;
-//         top: 0;
-//         left: 0;
-//         right: 0;
-//         bottom: 0;
-//         border-radius: inherit;
-//         background: rgba($b, 0.03);
-//         border: 1px solid rgba($b, 0.06);
-//       }
-//     }
-//     img {
-//       position: absolute;
-//       top: 0;
-//       left: 0;
-//       right: 0;
-//       bottom: 0;
-//       width: 100%;
-//       height: 100%;
-//       object-fit: cover;
-//       object-position: 50% 50%;
-//       transition: transform 0.3s;
-//     }
-//   }
-//   a {
-//     &:hover {
-//       img {
-//         transform: scale(1.05);
-//       }
-//     }
-//   }
-//   .txt-shopping {
-//     margin-top: 10px;
-//     .txt-shopping__tit {
-//       display: block;
-//       margin-bottom: 5px;
-//       font-size: 14px;
-//       color: $titDefault;
-//     }
-//     .txt-shopping__desc {
-//       font-size: 12px;
-//     }
-//   }
-// }
-.slide-intro {
-  width: 850px;
-}
-.swiper-slide {
-  width: 100%;
-  ul {
-    display: flex;
-    li {
-      width: 850px;
-      height: 530px;
-    }
-  }
-}
-
-// 전시안내
-.section-show {
-  .sec-tit {
-    text-align: center;
+    padding-bottom: 40px;
     font-family: "Pretendard", serif;
     font-weight: 600;
     font-size: 40px;
   }
-}
-.lst-show {
-  display: flex;
-  .show-item {
-    margin: 30px 60px 30px 0;
-    .show-txt {
-      margin: 30px 5px 20px 0;
-      .show-bg {
-        display: flex;
+  .txt-middle {
+    padding-bottom: 50px;
+    font-family: "Pretendard", serif;
+    font-weight: 500;
+    font-size: 20px;
+  }
+  .txt-bottom {
+    font-family: "Pretendard", serif;
+    font-weight: 500;
+    font-size: 17px;
+  }
+  .slide-intro {
+    width: 850px;
+    margin-right: 100px;
+    .swiper-slide {
+      width: 100%;
+    }
+  }
+  .swiper-button-next {
+    display: none;
+  }
+  .swiper-button-prev {
+    display: none;
+  }
+  // .swiper-pagination {
+  //   position: absolute;
+  //   display: flex;
+  //   top: 677px;
+  //   left: 1703px;
+  //   width: 100px;
+  //   height: 30px;
+  // .swiper-pagination-bullet {
+  //   background-color: #111;
+  //   border-radius: 100%;
+  //   width: 10px;
+  //   height: 10px;
+  // }
+  // }
+  .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background: transparent;
+    border: 1px solid pink;
+    opacity: 1;
+  }
+  .swiper-pagination-bullet-active {
+    width: 40px;
+    transition: width 0.5s;
+    border-radius: 5px;
+    background: pink;
+    border: 1px solid transparent;
+  }
+  //   .swiper-pagination {
+  //     position: absolute;
+  //     left: 50%;
+  //     bottom: 8px;
+  //     transform: translatex(-50%);
+  //     z-index: 1;
+  //     width: auto !important;
+  //   }
+  //   .swiper-pagination-bullet {
+  //     border-radius: 0;
+  //     width: 8px;
+  //     height: 8px;
+  //     border-radius: 50%;
+  //     line-height: 30px;
+  //     font-size: 12px;
+  //     opacity: 1;
+  //     background: rgba(255, 185, 0, 0.3);
+  //     display: inline-block;
+  //     margin-right: 8px;
+  //     cursor: pointer;
+  //     transition: all 0.2s;
+  //   }
+
+  //   .swiper-pagination-bullet-active {
+  //     background: #ffb200;
+  //     width: 20px;
+  //     border-radius: 10px;
+  //   }
+  // }
+
+  // 전시안내
+  .section-show {
+    .sec-tit {
+      text-align: center;
+      font-family: "Pretendard", serif;
+      font-weight: 600;
+      font-size: 40px;
+    }
+  }
+  .lst-show {
+    display: flex;
+    .show-item {
+      margin: 30px 60px 30px 0;
+      .show-txt {
+        margin: 30px 5px 20px 0;
+        .show-bg {
+          display: flex;
+        }
+        .show-bg-black {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-right: 3px;
+          width: 80px;
+          height: 30px;
+          color: #fff;
+          background: #111;
+          border: 1px solid #111;
+        }
+        .show-bg-white {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 80px;
+          height: 30px;
+          background: #fff;
+          border: 1px solid #111;
+        }
+        a {
+          display: block;
+          padding-top: 20px;
+          font-family: "Pretendard", serif;
+          font-weight: 500;
+          font-size: 20px;
+        }
+        p {
+          padding-top: 5px;
+          color: #777777;
+          font-family: "Pretendard", serif;
+          font-weight: 500;
+          font-size: 15px;
+        }
       }
-      .show-bg-black {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-right: 3px;
-        width: 80px;
-        height: 30px;
-        color: #fff;
-        background: #111;
-        border: 1px solid #111;
+    }
+  }
+
+  // 알림
+  .section-bbs {
+    .sec-tit {
+      text-align: center;
+      font-family: "Pretendard", serif;
+      font-weight: 600;
+      font-size: 40px;
+    }
+    .inner {
+      display: flex;
+      flex-direction: column;
+      margin: auto;
+      width: 1114px;
+    }
+  }
+  .tab-notice {
+    position: relative;
+    border-top: 2px solid #d9d9d9;
+    .notice-tit {
+      margin: 20px 0 20px 0;
+      font-size: 25px;
+    }
+    .more-btn {
+      position: absolute;
+      top: 30px;
+      right: 0;
+      width: 94px;
+      height: 28px;
+      background: #d9d9d9;
+      border-radius: 10px;
+      color: #777777;
+      font-family: "Font Awesome 6 free";
+      font-weight: 900;
+      font-size: 15px;
+      &::after {
+        content: "\f178";
+        font-weight: 900;
+        padding-left: 5px;
       }
-      .show-bg-white {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 80px;
-        height: 30px;
-        background: #fff;
-        border: 1px solid #111;
-      }
+    }
+    .notice-txt {
+      display: flex;
+      justify-content: space-between;
       a {
-        display: block;
-        padding-top: 20px;
+        padding: 10px;
         font-family: "Pretendard", serif;
         font-weight: 500;
         font-size: 20px;
       }
-      p {
-        padding-top: 5px;
-        color: #777777;
+      span {
+        padding: 10px;
         font-family: "Pretendard", serif;
         font-weight: 500;
-        font-size: 15px;
+        font-size: 18px;
+        color: #aaaaaa;
       }
     }
   }
-}
-
-// 알림
-.section-bbs {
-  .sec-tit {
-    text-align: center;
-    font-family: "Pretendard", serif;
-    font-weight: 600;
-    font-size: 40px;
-  }
-  .inner {
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    width: 1114px;
-  }
-}
-.tab-notice {
-  position: relative;
-  border-top: 2px solid #d9d9d9;
-  .notice-tit {
-    margin: 20px 0 20px 0;
-    font-size: 25px;
-  }
-  .more-btn {
-    position: absolute;
-    top: 30px;
-    right: 0;
-    width: 94px;
-    height: 28px;
-    background: #d9d9d9;
-    border-radius: 10px;
-    color: #777777;
-    font-family: "Font Awesome 6 free";
-    font-weight: 900;
-    font-size: 15px;
-    &::after {
-      content: "\f178";
+  .tab-news {
+    position: relative;
+    border-top: 2px solid #d9d9d9;
+    .news-tit {
+      margin: 20px 0 20px 0;
+      font-size: 25px;
+    }
+    .more-btn {
+      position: absolute;
+      top: 30px;
+      right: 0;
+      width: 94px;
+      height: 28px;
+      background: #d9d9d9;
+      border-radius: 10px;
+      color: #777777;
+      font-family: "Font Awesome 6 free";
       font-weight: 900;
-      padding-left: 5px;
+      font-size: 15px;
+      &::after {
+        content: "\f178";
+        font-weight: 900;
+        padding-left: 5px;
+      }
+    }
+    .news-txt {
+      display: flex;
+      justify-content: space-between;
+      a {
+        padding: 10px;
+        font-family: "Pretendard", serif;
+        font-weight: 500;
+        font-size: 20px;
+      }
+      span {
+        padding: 10px;
+        font-family: "Pretendard", serif;
+        font-weight: 500;
+        font-size: 18px;
+        color: #aaaaaa;
+      }
     }
   }
-  .notice-txt {
-    display: flex;
-    justify-content: space-between;
-    a {
-      padding: 10px;
-      font-family: "Pretendard", serif;
-      font-weight: 500;
-      font-size: 20px;
-    }
-    span {
-      padding: 10px;
-      font-family: "Pretendard", serif;
-      font-weight: 500;
-      font-size: 18px;
-      color: #aaaaaa;
-    }
-  }
-}
-.tab-news {
-  position: relative;
-  border-top: 2px solid #d9d9d9;
-  .news-tit {
-    margin: 20px 0 20px 0;
-    font-size: 25px;
-  }
-  .more-btn {
-    position: absolute;
-    top: 30px;
-    right: 0;
-    width: 94px;
-    height: 28px;
-    background: #d9d9d9;
-    border-radius: 10px;
-    color: #777777;
-    font-family: "Font Awesome 6 free";
-    font-weight: 900;
-    font-size: 15px;
-    &::after {
-      content: "\f178";
-      font-weight: 900;
-      padding-left: 5px;
-    }
-  }
-  .news-txt {
-    display: flex;
-    justify-content: space-between;
-    a {
-      padding: 10px;
-      font-family: "Pretendard", serif;
-      font-weight: 500;
-      font-size: 20px;
-    }
-    span {
-      padding: 10px;
-      font-family: "Pretendard", serif;
-      font-weight: 500;
-      font-size: 18px;
-      color: #aaaaaa;
-    }
-  }
-}
 
-//추진사업안내
-.section-bnr {
-  position: relative;
-  margin-top: 100px;
-  height: 1150px;
-  background: #171010;
-  &::after {
-    content: "";
-    position: absolute;
-    top: 680px;
-    left: 0;
-    width: 1440px;
-    height: 1px;
-    background: #fdfbf7;
-  }
-  .sec-tit {
-    text-align: center;
-    font-family: "Pretendard", serif;
-    font-weight: 600;
-    font-size: 40px;
-    color: #fff;
-    margin: 30px 0;
-  }
-  .sec-contents {
-    display: flex;
-    flex-wrap: wrap;
-  }
-}
-.goto-bnr {
-  position: relative;
-  margin: 80px 0;
-  &:nth-child(2) {
+  //추진사업안내
+  .section-bnr {
+    position: relative;
+    margin-top: 100px;
+    height: 1150px;
+    background: #171010;
     &::after {
       content: "";
       position: absolute;
-      top: 0px;
+      top: 220px;
       left: 0;
-      width: 1px;
-      height: 360px;
+      width: 100%;
+      height: 1px;
       background: #fdfbf7;
     }
-  }
-  &:nth-child(3) {
-    &::after {
-      content: "";
-      position: absolute;
-      top: 0px;
-      left: 0;
-      width: 1px;
-      height: 360px;
-      background: #fdfbf7;
-    }
-  }
-  &:nth-child(5) {
-    &::after {
-      content: "";
-      position: absolute;
-      top: 0px;
-      left: 0;
-      width: 1px;
-      height: 360px;
-      background: #fdfbf7;
-    }
-  }
-  &:nth-child(6) {
-    &::after {
-      content: "";
-      position: absolute;
-      top: 0px;
-      left: 0;
-      width: 1px;
-      height: 360px;
-      background: #fdfbf7;
-    }
-  }
-  a {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 440px;
-    height: 350px;
-    img {
-      width: 250px;
-      height: 250px;
-    }
-  }
-  span {
-    text-align: center;
-    font-family: "Pretendard", serif;
-    font-weight: 500;
-    font-size: 20px;
-    width: 250px;
-    padding-top: 50px;
-    color: #fff;
-  }
-}
-.goto-bnr:hover {
-  a {
-    &::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 444px;
-      height: 350px;
-      background: #fdfbf7;
-    }
-  }
-}
-
-// 협회 네트워크
-.section-work {
-  margin: 30px 0;
-  .sec-tit {
-    text-align: center;
-    font-family: "Pretendard", serif;
-    font-weight: 600;
-    font-size: 40px;
-  }
-  .inner {
-    display: flex;
-    margin: 80px 0;
-  }
-  .img-map {
-    display: block;
-    width: 700px;
-    height: 600px;
-    img {
-      overflow: hidden;
-      margin-top: 10px;
-    }
-  }
-  .txt-work {
-    margin-left: 64px;
-    h3 {
-      margin-bottom: 50px;
+    .sec-tit {
+      text-align: center;
       font-family: "Pretendard", serif;
       font-weight: 600;
-      font-size: 30px;
+      font-size: 40px;
+      color: #fff;
+      margin: 30px 0;
     }
-    .txt-work-lst {
-      strong {
+    .sec-contents {
+      display: flex;
+      flex-wrap: nowrap;
+    }
+    .inner {
+      padding-top: 30px;
+    }
+  }
+  .goto-bnr {
+    position: relative;
+    margin: 80px 0;
+    &:nth-child(2) {
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0px;
+        left: 0;
+        width: 1px;
+        height: 360px;
+        background: #fdfbf7;
+      }
+    }
+    &:nth-child(3) {
+      &::after {
+        content: "";
+        position: absolute;
+        top: -30px;
+        left: 0;
+        width: 1px;
+        height: 460px;
+        background: #fdfbf7;
+      }
+    }
+    &:nth-child(4) {
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0px;
+        left: 0;
+        width: 1px;
+        height: 360px;
+        background: #fdfbf7;
+      }
+    }
+    &:nth-child(5) {
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0px;
+        left: 0;
+        width: 1px;
+        height: 360px;
+        background: #fdfbf7;
+      }
+    }
+    &:nth-child(6) {
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0px;
+        left: 0;
+        width: 1px;
+        height: 360px;
+        background: #fdfbf7;
+      }
+    }
+    a {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 440px;
+      height: 350px;
+      img {
+        width: 250px;
+        height: 250px;
+        border-radius: 10px;
+      }
+    }
+    span {
+      text-align: center;
+      font-family: "Pretendard", serif;
+      font-weight: 500;
+      font-size: 20px;
+      width: 250px;
+      padding-top: 50px;
+      color: #fff;
+    }
+  }
+  .goto-bnr:hover {
+    a {
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 444px;
+        height: 600px;
+        background: #fdfbf7;
+      }
+    }
+  }
+
+  // 협회 네트워크
+  .section-work {
+    margin: auto;
+    // width: 1440px;
+    .sec-tit {
+      text-align: center;
+      font-family: "Pretendard", serif;
+      font-weight: 600;
+      font-size: 40px;
+    }
+    .inner {
+      display: flex;
+      justify-content: center;
+      margin: 80px 0;
+    }
+    .img-map {
+      display: block;
+      width: 700px;
+      height: 600px;
+      img {
+        overflow: hidden;
+        margin-top: 10px;
+      }
+    }
+    .txt-work {
+      margin-left: 64px;
+      h3 {
+        margin-bottom: 50px;
         font-family: "Pretendard", serif;
         font-weight: 600;
-        font-size: 25px;
+        font-size: 30px;
       }
-      .txt-work-p {
-        margin: 15px 0 20px 0;
+      .txt-work-lst {
+        strong {
+          font-family: "Pretendard", serif;
+          font-weight: 600;
+          font-size: 25px;
+        }
+        .txt-work-p {
+          margin: 15px 0 20px 0;
+          font-family: "Pretendard", serif;
+          font-weight: 500;
+          font-size: 21px;
+        }
+        .txt-work-box {
+          display: flex;
+          flex-direction: column;
+          margin: 20px 0 45px 0;
+          div {
+            display: flex;
+          }
+        }
+        p {
+          font-family: "Pretendard", serif;
+          font-weight: 500;
+          font-size: 18px;
+        }
+        span {
+          margin-left: 10px;
+          font-family: "Pretendard", serif;
+          font-weight: 500;
+          font-size: 18px;
+          color: #636363;
+        }
+      }
+      .work-goto-btn {
+        width: 320px;
+        height: 45px;
+        border-radius: 25px;
+        margin-bottom: 40px;
+        background: #ffd390;
         font-family: "Pretendard", serif;
         font-weight: 500;
         font-size: 21px;
       }
-      .txt-work-box {
-        display: flex;
-        flex-direction: column;
-        margin: 20px 0 45px 0;
-        div {
-          display: flex;
+      .sec-work-tel {
+        font-family: "Line Awesome Free";
+        font-weight: 900;
+        &::before {
+          content: "\f2a0";
+          width: 18px;
+          height: 18px;
+          color: #888888;
         }
-      }
-      p {
-        font-family: "Pretendard", serif;
-        font-weight: 500;
-        font-size: 18px;
-      }
-      span {
-        margin-left: 10px;
-        font-family: "Pretendard", serif;
-        font-weight: 500;
-        font-size: 18px;
-        color: #636363;
-      }
-    }
-    .work-goto-btn {
-      width: 320px;
-      height: 45px;
-      border-radius: 25px;
-      margin-bottom: 40px;
-      background: #ffd390;
-      font-family: "Pretendard", serif;
-      font-weight: 500;
-      font-size: 21px;
-    }
-    .sec-work-tel {
-      font-family: "Line Awesome Free";
-      font-weight: 900;
-      &::before {
-        content: "\f2a0";
-        width: 18px;
-        height: 18px;
-        color: #888888;
-      }
-      .work-g-tel {
-        font-family: "Pretendard", serif;
-        font-weight: 500;
-        font-size: 18px;
-        color: #888888;
+        .work-g-tel {
+          font-family: "Pretendard", serif;
+          font-weight: 500;
+          font-size: 18px;
+          color: #888888;
+        }
       }
     }
   }
